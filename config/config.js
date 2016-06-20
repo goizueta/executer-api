@@ -1,4 +1,7 @@
 var development = {
+    db: {
+        url                 : 'mongodb://localhost/executer',
+    },
     firebase: {
         rootRefUrl          : "https://project-4946325313836123278.firebaseio.com/",
         secretKey           : "mJ7NQ9eTXCowtmSzAAWqDFAF9n9kiufKdVxD09hQ"
@@ -27,6 +30,9 @@ var development = {
 };
 
 var production = {
+    db: {
+        url                 : ''
+    },
     firebase: {
         rootRefUrl          : "https://project-4946325313836123278.firebaseio.com/",
         secretKey           : "mJ7NQ9eTXCowtmSzAAWqDFAF9n9kiufKdVxD09hQ"
@@ -53,6 +59,9 @@ var production = {
 };
 
 var staging = {
+    db: {
+        url                 : ''
+    },
     firebase: {
         rootRefUrl          : "https://project-4946325313836123278.firebaseio.com/",
         secretKey           : "mJ7NQ9eTXCowtmSzAAWqDFAF9n9kiufKdVxD09hQ"
@@ -65,6 +74,9 @@ var staging = {
 };
 
 var test = {
+    db: {
+        url                 : ''
+    },
     firebase: {
         rootRefUrl          : "https://project-4946325313836123278.firebaseio.com/",
         secretKey           : "mJ7NQ9eTXCowtmSzAAWqDFAF9n9kiufKdVxD09hQ"
