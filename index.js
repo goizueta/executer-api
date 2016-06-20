@@ -3,7 +3,7 @@ global._ = require('lodash');
 
 var cookieParser = require('cookie-parser'),
     morgan = require('morgan'),
-    Firebase = require("firebase"),
+    mongoose = require('mongoose'),
     env = process.env.NODE_ENV || 'development',
     config = require('./config/config')[env],
     router = require('./lib/routes'),
@@ -11,6 +11,17 @@ var cookieParser = require('cookie-parser'),
     bodyParser = require('body-parser'),
     cors = require('cors'),
     app = express();
+
+console.log('\nConnecting to MongoDB at ' + config.db.url + ' ...');
+mongoose.connect(config.db.url);
+
+mongoose.connection.on('open', function () {
+    console.log('\nConnected to MongoDB...');
+});
+
+mongoose.connection.on('error', function () {
+    console.error('\nUnable to connect to MongoDB server!');
+});
 
 app.use(morgan('dev'));
 app.use(cookieParser());
