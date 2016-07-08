@@ -9,18 +9,18 @@ Executer automatically schedules a ride via Uber for events in your Google Calen
 
 ### V1 Designs
 ![Executer Screenshots](http://i.imgur.com/Y1FyjmK.png)
-Screenshots of app using UberHack API.
+Screenshots of app using Executer API.
 
 ```
 Uber API <-                        -> Executer for iOS
             \                    /
-              -> UberHack App <-
+              -> Executer API <-
             /                    \
 GCal API <-                        -> Executer for Android
                                   
 ```
 
-Check out the repos of mobile apps that already use the UberHack backend:
+Check out the repos of mobile apps that already use the Executer backend:
 - [Executer for iOS](https://github.com/andela-Kshittu/Executer)
 - [Exectuter for Android](https://github.com/andela-aabdullahi/Executer)
 
@@ -31,8 +31,8 @@ Check out the repos of mobile apps that already use the UberHack backend:
 Get the app running locally in the following way:
 ```
 # Clone the Repo
-git clone https://github.com/andela-ladenusi/uberhack
-cd uberhack
+git clone https://github.com/andela/executer-api
+cd executer-api
 
 # Install dependencies
 npm install
