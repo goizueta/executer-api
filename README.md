@@ -65,3 +65,7 @@ The server will now be running at `http://localhost:5555`
   - Returns particular request for a particular user
 - **<code>DELETE</code> users/:uuid/requests/:id**
   - Deletes an existing request
+
+## License
+Code released under [the MIT license](https://github.com/andela/executer-api).
+
