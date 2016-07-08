@@ -4,20 +4,23 @@ A RESTful API built for consumption by the Executer client apps, which originate
 
 Executer automatically schedules a ride via Uber for events in your Google Calendar. 
 
+### V2 Designs -- Next Release
+![Executer Screenshots](http://imgur.com/CwMNDHy.gif)
 
+### V1 Designs
 ![Executer Screenshots](http://i.imgur.com/Y1FyjmK.png)
-Screenshots of app using UberHack API.
+Screenshots of app using Executer API.
 
 ```
 Uber API <-                        -> Executer for iOS
             \                    /
-              -> UberHack App <-
+              -> Executer API <-
             /                    \
 GCal API <-                        -> Executer for Android
                                   
 ```
 
-Check out the repos of mobile apps that already use the UberHack backend:
+Check out the repos of mobile apps that already use the Executer backend:
 - [Executer for iOS](https://github.com/andela-Kshittu/Executer)
 - [Exectuter for Android](https://github.com/andela-aabdullahi/Executer)
 
@@ -28,8 +31,8 @@ Check out the repos of mobile apps that already use the UberHack backend:
 Get the app running locally in the following way:
 ```
 # Clone the Repo
-git clone https://github.com/andela-ladenusi/uberhack
-cd uberhack
+git clone https://github.com/andela/executer-api
+cd executer-api
 
 # Install dependencies
 npm install
@@ -65,3 +68,7 @@ The server will now be running at `http://localhost:5555`
   - Returns particular request for a particular user
 - **<code>DELETE</code> users/:uuid/requests/:id**
   - Deletes an existing request
+
+## License
+Code released under [the MIT license](https://github.com/andela/executer-api).
+
