@@ -70,5 +70,5 @@ The server will now be running at `http://localhost:5555`
   - Deletes an existing request
 
 ## License
-Code released under [the MIT license](https://github.com/andela/executer-api).
+Code released under [GNU GPLv3 License](https://github.com/andela/executer-api/LICENSE).
 
